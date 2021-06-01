@@ -1,10 +1,19 @@
-// Opportunity for better design
+// Abstraction
 
 #include <stdio.h>
 
+void meow(void);
+
 int main(void)
 {
-    printf("meow\n");
-    printf("meow\n");
+    for (int i = 0; i < 3; i++)
+    {
+        meow();
+    }
+}
+
+// Meow once
+void meow(void)
+{
     printf("meow\n");
 }
