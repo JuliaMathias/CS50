@@ -7,7 +7,7 @@ int main(void)
     int start_size;
     do
     {
-      start_size = get_int("How many Lhamas do you want to start your population with? ");
+      start_size = get_int("Start size: ");
     }
     while (start_size < 9);
 
@@ -15,9 +15,9 @@ int main(void)
     int end_size;
     do
     {
-      end_size = get_int("How many Lhamas do you want to end your population with? ");
+      end_size = get_int("End size: ");
     }
-    while (start_size >= end_size);
+    while (start_size > end_size);
 
     // TODO: Calculate number of years until we reach threshold
     int years = 0;
