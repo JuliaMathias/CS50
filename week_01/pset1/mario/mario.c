@@ -24,7 +24,7 @@ int main(void)
         draw('#', i + 1);
 
         // go to the next line
-        printf("\n")
+        printf("\n");
     }
 }
 
@@ -33,6 +33,6 @@ void draw (char character, int height)
 {
     for (int i = 0; i < height; i++)
     {
-        printf("%c", character)
+        printf("%c", character);
     }
 }
