@@ -29,10 +29,10 @@ int main(void)
 }
 
 // function that draws the blocks
-void draw (char hash, int height)
+void draw (char char, int height)
 {
     for (int i = 0; i < height; i++)
     {
-        printf("%c", c)
+        printf("%c", char)
     }
 }
