@@ -4,10 +4,8 @@ void draw (char hash, int height)
 
 int main(void)
 {
-    
     int height;
-    int direction = 0;
-    
+
     // Prompt user for height
     do
     {
@@ -19,19 +17,22 @@ int main(void)
 
     for (int i = 0; i < height; i++)
     {
-        for (int j = height - 1; j >= 0; j --)
-        {
-            printf("#");
-        }
-        
-        printf("\n");
+        // draw a line of the piramid
+        draw(' ', height - 1 - i);
+        draw('#', i + 1);
+        draw(' ', 2);
+        draw('#', i + 1);
+
+        // go to the next line
+        printf("\n")
     }
 }
 
+// function that draws the blocks
 void draw (char hash, int height)
 {
     for (int i = 0; i < height; i++)
     {
-        draw("%c", c)
+        printf("%c", c)
     }
 }
