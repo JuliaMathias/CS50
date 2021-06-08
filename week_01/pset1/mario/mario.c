@@ -1,6 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
-void draw (char hash, int height)
+void draw (char character, int height);
 
 int main(void)
 {
@@ -29,10 +29,10 @@ int main(void)
 }
 
 // function that draws the blocks
-void draw (char char, int height)
+void draw (char character, int height)
 {
     for (int i = 0; i < height; i++)
     {
-        printf("%c", char)
+        printf("%c", character)
     }
 }
