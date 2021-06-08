@@ -1,6 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
-void draw (char character, int height);
+void draw(char character, int height);
 
 int main(void)
 {
@@ -12,8 +12,6 @@ int main(void)
         height = get_int("Height: ");
     }
     while (height < 1 || height > 8);
-
-    printf("Stored: %i\n", height);
 
     for (int i = 0; i < height; i++)
     {
@@ -29,7 +27,7 @@ int main(void)
 }
 
 // function that draws the blocks
-void draw (char character, int height)
+void draw(char character, int height)
 {
     for (int i = 0; i < height; i++)
     {
