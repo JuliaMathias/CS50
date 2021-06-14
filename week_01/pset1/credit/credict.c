@@ -28,6 +28,7 @@ bool validate(long long card)
 
 int find_length (long long digits)
 {
-    int length = 0
-    for (int length = 0; digits !=0; digits /=10)
+    int length;
+    for (length = 0; digits != 0; digits /= 10; length++)
+    return length
 }
