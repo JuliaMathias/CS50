@@ -32,3 +32,19 @@ int find_length (long long digits)
     for (length = 0; digits != 0; digits /= 10; length++)
     return length
 }
+
+bool checksum(long long card_number)
+{
+    int sum = 0;
+    for (int i = 0; card_number != 10; i++, card_number /= 10)
+    {
+        if (i % 2 == 0)
+            sum += card_number % 10;
+        else
+            {
+                int digit = 2 * (card_number % 10);
+                sum += digit / 10 + digits % 10;
+            }
+    }
+    return (sum % 10) == 0;
+}
