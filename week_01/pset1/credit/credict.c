@@ -1,24 +1,28 @@
 #include  <cs50.h>
 #include  <stdio.h>
 
+bool validate(long long card);
+int find_length (long long digits);
+bool checksum(long long card_number);
+void reveal_brand(long long card_number);
+
 int main(void)
 {   long long card
     do
     {
     card = get_long_long("Number: ");
 
-    } while (card < 0)
+    } while (card < 0);
 
     if (validate(card))
     {
-      reveal_brand(card);
+        reveal_brand(card);
     }
     else
     {
-      printf("INVALID \n");
+        printf("INVALID \n");
     }
 
-    
 }
 bool validate(long long card)
 {
@@ -47,4 +51,24 @@ bool checksum(long long card_number)
             }
     }
     return (sum % 10) == 0;
+}
+
+void reveal_brand(long long card_number)
+{
+    if ((card_number >= 34e13 && card_number < 35e13) || (card_number >= 37e13 && card_number < 38e13))
+    {
+        printf("AMEX\n")
+    }
+    else if (card_number >= 51e14 && card_number < 56e14)
+    {
+        printf("MASTERCARD\n")
+    }
+    else if ((card_number >= 4e12 && card_number < 5e12) || (card_number >= 4e15 && card_number < 5e15))
+    {
+        printf("VISA\n")
+    }
+    else
+    {
+        printf("INVALID\n")
+    }
 }
