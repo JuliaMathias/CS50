@@ -37,12 +37,12 @@ int compute_score(string word)
     {
         char character = word[i];
         if (isalpha(character))
-            total += POINTS[getindex(character)];
+            total += POINTS[get_index(character)];
     }
     return total;
 }
 
 int get_index(char character)
 {
-    return tolower(c) - 'a';
+    return tolower(character) - 'a';
 }
