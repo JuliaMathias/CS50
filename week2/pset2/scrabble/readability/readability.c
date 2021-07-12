@@ -42,4 +42,15 @@ int getLetterCount(string text)
     return letterCount;
 }
 
-
+int getSentenceCount(string text)
+{
+    int sentenceCount = 0;
+    for (int i = 0; i < strlen(text); i++)
+    {
+        if (text[i] == '.' || text[i] == '!' || text[i] == '?')
+        {
+            sentenceCount += 1;
+        }
+    }
+    return sentenceCount;
+}
