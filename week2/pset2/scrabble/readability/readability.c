@@ -76,3 +76,19 @@ int getGradeLevel(int letterCount, int sentenceCount, int wordCount)
 
     return round(0.0588 * letterAverage - 0.296 * sentenceAverage - 15.8);
 }
+
+void printGradeLevel(int gradeLevel)
+{
+    if (gradeLevel <= 1)
+    {
+        printf("Before Grade 1\n");
+    }
+    else if (gradeLevel >= 16)
+    {
+        printf("Grade 16+\n");
+    }
+    else
+    {
+        printf("Grade %i\n", gradeLevel);
+    }
+}
