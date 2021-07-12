@@ -19,12 +19,16 @@ int main(int argc, string argv[])
 
     //TODO: calculate the number of letters in the text
     int letterCount = getLetterCount(text);
+
     //TODO: calculate the number of words in the text
     int wordCount = getWordsCount(text);
+
     //TODO: calculate the number of sentences in the text
     int sentenceCount = getSentenceCount(text);
+
     //TODO: calculate the grade level
     int gradeLevel = int getGradeLevel(int letterCount, int sentenceCount, int wordCount);
+
     // TODO: Print the readability level
     printGradeLevel(gradeLevel);
 }
