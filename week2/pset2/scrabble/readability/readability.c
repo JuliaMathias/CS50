@@ -31,6 +31,15 @@ int main(int argc, string argv[])
 
 int getLetterCount(string text)
 {
-
+    int letterCount = 0;
+    for (int i = 0; i < strlen(text); i++)
+    {
+        if (isalpha(text[i]))
+        {
+            letterCount += 1;
+        }
+    }
+    return letterCount;
 }
+
 
