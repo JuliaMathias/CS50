@@ -54,3 +54,16 @@ int getSentenceCount(string text)
     }
     return sentenceCount;
 }
+
+int getWordCount(string text)
+{
+    int wordCount = 0;
+    for (int i = 0; i < strlen(text); i++)
+    {
+        if (text[i] == ' ')
+        {
+            wordCount += 1;
+        }
+    }
+    return wordCount + 1;
+}
