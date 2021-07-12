@@ -67,3 +67,12 @@ int getWordCount(string text)
     }
     return wordCount + 1;
 }
+
+int getGradeLevel(int letterCount, int sentenceCount, int wordCount)
+{
+    float sentenceAverage = (sentenceCount / (float)wordCount) * 100;
+
+    float letterAverage = (letterCount / (float)wordCount) * 100;
+
+    return round(0.0588 * letterAverage - 0.296 * sentenceAverage - 15.8);
+}
