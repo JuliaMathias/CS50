@@ -2,21 +2,35 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
+#include <ctype.h>
 
+int getLetterCount(string text);
+int getWordCount(string text);
+int getSentenceCount(string text);
+int getGradeLevel(int letterCount, int sentenceCount, int wordCount);
+void printGradeLevel(int gradeLevel);
 
-int main(void)
+int main(int argc, string argv[])
 {
     // Get input text
     string text = get_string("Text: ");
 
 
+    //TODO: calculate the number of letters in the text
+    int letterCount = getLetterCount(text);
+    //TODO: calculate the number of words in the text
+    int wordCount = getWordsCount(text);
+    //TODO: calculate the number of sentences in the text
+    int sentenceCount = getSentenceCount(text);
+    //TODO: calculate the grade level
+    int gradeLevel = int getGradeLevel(int letterCount, int sentenceCount, int wordCount);
     // TODO: Print the readability level
-        //TODO: split the text into words
-        //TODO: calculate the number of words in the text
-        //TODO: calculate the average of letters per 100 words in the text
-        //TODO: calculate the number of sentences in the text
-        //TODO: calculate the average of sentences per 100 words in the text
+    printGradeLevel(gradeLevel);
+}
 
-        index = 0.0588 * letter_average - 0.296 * sentence_average - 15.8
+int getLetterCount(string text)
+{
+
 }
 
