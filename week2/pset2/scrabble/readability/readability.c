@@ -11,7 +11,7 @@ int getSentenceCount(string text);
 int getGradeLevel(int letterCount, int sentenceCount, int wordCount);
 void printGradeLevel(int gradeLevel);
 
-int main(int argc, string argv[])
+int main(void)
 {
     // Get input text
     string text = get_string("Text: ");
@@ -21,13 +21,13 @@ int main(int argc, string argv[])
     int letterCount = getLetterCount(text);
 
     //TODO: calculate the number of words in the text
-    int wordCount = getWordsCount(text);
+    int wordCount = getWordCount(text);
 
     //TODO: calculate the number of sentences in the text
     int sentenceCount = getSentenceCount(text);
 
     //TODO: calculate the grade level
-    int gradeLevel = int getGradeLevel(int letterCount, int sentenceCount, int wordCount);
+    int gradeLevel = getGradeLevel(letterCount, sentenceCount, wordCount);
 
     // TODO: Print the readability level
     printGradeLevel(gradeLevel);
